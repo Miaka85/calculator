@@ -27,19 +27,27 @@ public class Main {
                 mainObject.subtraktion(A, B);
             }
             else if (raknesatt == 3) {
-           //     mainObject.multiplikation();
+              mainObject.multiplikation(A, B);
             }
             else if (raknesatt == 4) {
-          //      mainObject.division();
+                mainObject.division(A, B);
             }
             else{
                 System.out.println("Nu blev det fel!");
             }
-        }
+
+            System.out.println("Avsluta med 0 eller fortsätt med 1");
+            int avslut = input.nextInt();
+
+            if (avslut == 0){
+                break;
+            }
 
         }
 
-        public void addition(double A, double B){
+        }
+
+        private void addition(double A, double B){
         double sum = A + B ;
         System.out.println("Summan av " + A + " och " + B + " är lika med " + sum + "\n");
 
@@ -50,7 +58,13 @@ public class Main {
 
     }
 
+        public void multiplikation(double A, double B){
+        double sum = A * B ;
+        System.out.println("Produkten av " + A + " och " + B + " är lika med " + sum + "\n");
+        }
 
-
-
+        public void division(double A, double B){
+        double sum = A / B ;
+        System.out.println("Kvoten av " + A + " och " + B + " är lika med " + sum + "\n");
+    }
 }
