@@ -24,7 +24,7 @@ public class Main {
                 mainObject.addition(A, B);
             }
             else if (raknesatt == 2) {
-          //      mainObject.subtraktion();
+                mainObject.subtraktion(A, B);
             }
             else if (raknesatt == 3) {
            //     mainObject.multiplikation();
@@ -41,10 +41,14 @@ public class Main {
 
         public void addition(double A, double B){
         double sum = A + B ;
-        System.out.println("Summan av " + A + " och " + B + " är lika med " + sum + "\n"); //Output using string formatting
+        System.out.println("Summan av " + A + " och " + B + " är lika med " + sum + "\n");
 
     }
+        public void subtraktion(double A, double B){
+        double sum = A - B ;
+        System.out.println("Differansen av " + A + " och " + B + " är lika med " + sum + "\n");
 
+    }
 
 
 
