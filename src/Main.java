@@ -4,7 +4,6 @@ public class Main {
 
     static Scanner input = new Scanner(System.in);
 
-
     public static void main(String[] args) {
         Main mainObject = new Main();
         while (true) {
@@ -47,24 +46,27 @@ public class Main {
 
         }
 
-        private void addition(double A, double B){
+        public static double addition(double A, double B){
         double sum = A + B ;
         System.out.println("Summan av " + A + " och " + B + " är lika med " + sum + "\n");
+        return(sum);
 
     }
-        public void subtraktion(double A, double B){
+        public static double subtraktion(double A, double B){
         double sum = A - B ;
         System.out.println("Differansen av " + A + " och " + B + " är lika med " + sum + "\n");
-
+        return(sum);
     }
 
-        public void multiplikation(double A, double B){
+        public static double multiplikation(double A, double B){
         double sum = A * B ;
         System.out.println("Produkten av " + A + " och " + B + " är lika med " + sum + "\n");
-        }
+        return(sum);
+    }
 
-        public void division(double A, double B){
+        public static double division(double A, double B){
         double sum = A / B ;
         System.out.println("Kvoten av " + A + " och " + B + " är lika med " + sum + "\n");
+        return(sum);
     }
 }
