@@ -25,7 +25,7 @@ class MainTest {
         double B = 22;
         Double testResult = Main.addition(A, B);
         assertNotEquals(99, testResult);
-        }
+    }
 
     @Test
     void addition_additionNegativeValueTest() {
@@ -38,15 +38,15 @@ class MainTest {
     //Testa med noll som value//
 
     @Test
-        void main() {
+    void main() {
     }
 
     @Test
     void subtraktion_subtraktionTest() {
-            double A = 33;
-            double B = 22;
-            Double testResult = Main.subtraktion(A, B);
-            assertEquals(11, testResult);
+        double A = 33;
+        double B = 22;
+        Double testResult = Main.subtraktion(A, B);
+        assertEquals(11, testResult);
     }
 
     @Test
@@ -72,7 +72,7 @@ class MainTest {
         double B = 44;
         Double testResult = Main.subtraktion(A, B);
         assertEquals(-77, testResult);
-        }
+    }
 
 
     @Test
@@ -87,7 +87,7 @@ class MainTest {
     void multiplikation_multiplikationWithZeroTest() {
         double A = 33;
         double B = 0;
-        Double testResult = Main.addition(A, B);
+        Double testResult = Main.multiplikation(A, B);
         assertEquals(0, testResult);
     }
 
@@ -119,13 +119,14 @@ class MainTest {
         assertEquals(1.5, testResult);
     }
 
-    @Test
+  /*  @Test
     void division_divisionWithZeroTest() {
         double A = 33;
         double B = 0;
         Double testResult = Main.division(A, B);
-        assertEquals("Du kan inte dividera med 0", testResult);
-    }
+
+        assertEquals (, testResult);
+    }*/
 
     @Test
     void division_divisionUnexpectedValueTest() {
@@ -142,7 +143,7 @@ class MainTest {
         Double testResult = Main.division(A, B);
         assertEquals(-0.75, testResult);
     }
-
+}
  /*   @Test
     void main_styrFunktionTest() {
         double A = 33;
@@ -155,4 +156,3 @@ class MainTest {
         //räkna ut expected på alla räknesätten. kolla att de har adderats
     }  //Valet via textfil
     //om raknesatt 1 är lika med ett så ska A och B adderas*/
-}
