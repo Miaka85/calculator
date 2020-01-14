@@ -4,6 +4,9 @@ public class Main {
 
     static Scanner input = new Scanner(System.in);
 
+    double B;
+    double A;
+
     public static void main(String[] args) {
         Main mainObject = new Main();
         while (true) {
@@ -64,9 +67,16 @@ public class Main {
         return(sum);
     }
 
-        public static double division(double A, double B){
-        double sum = A / B ;
-        System.out.println("Kvoten av " + A + " och " + B + " är lika med " + sum + "\n");
-        return(sum);
-    }
+        public static double division(double A, double B) {
+
+        double sum = A / B;
+
+            if (B == 0) {
+                System.out.println("Du kan inte dividera med 0");
+            } else {
+
+                System.out.println("Kvoten av " + A + " och " + B + " är lika med " + sum + "\n");
+            }
+            return (sum);
+        }
 }

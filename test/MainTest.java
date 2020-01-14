@@ -12,6 +12,14 @@ class MainTest {
     }
 
     @Test
+    void addition_additionWithZeroTest() {
+        double A = 33;
+        double B = 0;
+        Double testResult = Main.addition(A, B);
+        assertEquals(33, testResult);
+    }
+
+    @Test
     void addition_additionUnexpectedValueTest() {
         double A = 33;
         double B = 22;
@@ -27,6 +35,8 @@ class MainTest {
         assertEquals(11, testResult);
     }
 
+    //Testa med noll som value//
+
     @Test
         void main() {
     }
@@ -37,6 +47,14 @@ class MainTest {
             double B = 22;
             Double testResult = Main.subtraktion(A, B);
             assertEquals(11, testResult);
+    }
+
+    @Test
+    void addition_subtraktionWithZeroTest() {
+        double A = 33;
+        double B = 0;
+        Double testResult = Main.subtraktion(A, B);
+        assertEquals(33, testResult);
     }
 
     @Test
@@ -63,6 +81,14 @@ class MainTest {
         double B = 22;
         Double testResult = Main.multiplikation(A, B);
         assertEquals(726, testResult);
+    }
+
+    @Test
+    void multiplikation_multiplikationWithZeroTest() {
+        double A = 33;
+        double B = 0;
+        Double testResult = Main.addition(A, B);
+        assertEquals(0, testResult);
     }
 
     @Test
@@ -94,6 +120,14 @@ class MainTest {
     }
 
     @Test
+    void division_divisionWithZeroTest() {
+        double A = 33;
+        double B = 0;
+        Double testResult = Main.division(A, B);
+        assertEquals("Du kan inte dividera med 0", testResult);
+    }
+
+    @Test
     void division_divisionUnexpectedValueTest() {
         double A = 33;
         double B = 22;
@@ -108,4 +142,17 @@ class MainTest {
         Double testResult = Main.division(A, B);
         assertEquals(-0.75, testResult);
     }
+
+ /*   @Test
+    void main_styrFunktionTest() {
+        double A = 33;
+        double B = 44;
+         Main mainObject = new Main();
+        String raknesatt == 1;
+        Double raknesatt = Main.main(A, B);
+        assertEquals(77, raknesatt);
+
+        //räkna ut expected på alla räknesätten. kolla att de har adderats
+    }  //Valet via textfil
+    //om raknesatt 1 är lika med ett så ska A och B adderas*/
 }
